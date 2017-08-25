@@ -19,37 +19,49 @@ Status: 200 OK
 ```json
 [
     {
-        "id": 3,
-        "user_id": 1,
-        "target_user": 1,
+        "id": 17,
+        "user_id": 4,
+        "target_user": 4,
         "reply_user": 0,
-        "body": "我是第三条评论",
-        "commentable_id": 1,
+        "body": "欧娜嘛嘛",
+        "commentable_id": 61,
         "commentable_type": "feeds",
-        "created_at": "2017-07-20 08:53:24",
-        "updated_at": "2017-07-20 08:53:24",
+        "created_at": "2017-08-25 02:11:52",
+        "updated_at": "2017-08-25 02:11:52",
         "commentable": {
-            "id": 1,
-            "user_id": 1,
-            "feed_content": "动态内容",
-            "feed_from": 1,
-            "like_count": 1,
+            "id": 61,
+            "user_id": 4,
+            "feed_content": "死咯都饿",
+            "feed_from": 3,
+            "like_count": 0,
             "feed_view_count": 0,
-            "feed_comment_count": 6,
+            "feed_comment_count": 1,
             "feed_latitude": null,
             "feed_longtitude": null,
             "feed_geohash": null,
             "audit_status": 1,
-            "feed_mark": 1,
+            "feed_mark": 41503627078906,
             "pinned": 0,
-            "created_at": "2017-06-27 07:04:32",
-            "updated_at": "2017-07-20 08:53:24",
-            "deleted_at": null,
             "pinned_amount": 0,
-            "images": [],
+            "created_at": "2017-08-25 02:11:19",
+            "updated_at": "2017-08-25 02:11:52",
+            "deleted_at": null,
+            "images": [
+                {
+                    "id": 69,
+                    "file_id": 58,
+                    "user_id": 4,
+                    "channel": "feed:image",
+                    "raw": "61",
+                    "size": "750x1334",
+                    "created_at": "2017-08-25 02:11:19",
+                    "updated_at": "2017-08-25 02:11:19",
+                    "deleted_at": null
+                }
+            ],
             "paid_node": null
         }
-    }
+    },
 ]
 ```
 
@@ -62,6 +74,12 @@ Status: 200 OK
 | body | 评论内容 |
 | commentable_id | 评论来源资源 ID，根据 `commentable_type` 判断是来自何处。|
 | commentable_type | 评论所属资源类型。|
+| images | 动态资源|
+| id | file_with id|
+| file_id | 图片ID|
+| user_id | 发布用户ID|
+| channel | 动态类型|
+| raw | 动态ID|
 | created_at | 评论创建时间。|
 | updated_at | 评论更新时间。|
 | commentable | 评论来源资料，如果来源被删除，则为 `null`。|
